@@ -1,0 +1,34 @@
+@import "../../../../sass/_dependencies.scss";
+
+.header {
+  width: 80%;
+  height: 70px;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-family: BlinkMacSystemFont, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background: $mainBlue;
+  background: -moz-linear-gradient(-45deg,  $mainBlue 0%, $mediumBlue 31%, $mediumBlue 31%, $mediumBlue 34%, $ligthBlue 50%,$veryLightyBlue 100%);
+  background: -webkit-linear-gradient(-45deg,  $mainBlue 0%,$mediumBlue 31%,$mediumBlue 31%,$mediumBlue 34%,$ligthBlue 50%,$veryLightyBlue 100%);
+  background: linear-gradient(135deg,  $mainBlue 0%,$mediumBlue 31%,$mediumBlue 31%,$mediumBlue 34%,$ligthBlue 50%,$veryLightyBlue 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 );
+
+  h1 {
+    text-transform: capitalize;
+    font-size: 24px;
+    color: $white;
+    opacity: 0.9;
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+                 0px -5px 35px rgba(255,255,255,0.3);
+  }
+
+  // Mobile
+  @include mobile {
+    h1 {
+      font-size: 18px;
+    }
+  }
+}
