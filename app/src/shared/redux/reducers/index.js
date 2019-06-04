@@ -2,10 +2,10 @@
 import { combineReducers } from 'redux';
 
 // App Reducers
-import widgetStore from '../../../frontend/app/widgetStore/reducer';
+import widget from '../../../frontend/app/widgetStore/reducer';
 
 const rootReducer = combineReducers({
-  widgetStore
+  widget
 });
 
 export default rootReducer;

@@ -1,6 +1,7 @@
 // Data for the widget details
 export default [
   {
+    id: 1,
     title: 'Widget 1',
     price: 750,
     imageUrl: 'widget1',
@@ -10,6 +11,7 @@ export default [
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra nisi non erat facilisis, sed commodo tellus posuere. Proin sollicitudin odio sit amet eleifend auctor. Donec nunc turpis, condimentum a ullamcorper ac, suscipit eu odio. Maecenas ut turpis maximus, condimentum dui in, ornare mi. Vestibulum non lacus blandit, scelerisque libero vitae, mollis dui. Proin sit amet tortor interdum, interdum neque nec, bibendum enim. Phasellus pulvinar tempor diam at rutrum. Suspendisse fermentum nulla sit amet velit viverra, non euismod dui hendrerit. Vivamus tristique eu arcu ut pharetra.'
   },
   {
+    id: 2,
     title: 'Widget 2',
     price: 240,
     imageUrl: 'widget2',
@@ -19,6 +21,7 @@ export default [
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra nisi non erat facilisis, sed commodo tellus posuere. Proin sollicitudin odio sit amet eleifend auctor. Donec nunc turpis, condimentum a ullamcorper ac, suscipit eu odio. Maecenas ut turpis maximus, condimentum dui in, ornare mi. Vestibulum non lacus blandit, scelerisque libero vitae, mollis dui. Proin sit amet tortor interdum, interdum neque nec, bibendum enim. Phasellus pulvinar tempor diam at rutrum. Suspendisse fermentum nulla sit amet velit viverra, non euismod dui hendrerit. Vivamus tristique eu arcu ut pharetra.'
   },
   {
+    id: 3,
     title: 'Widget 3',
     price: 500,
     imageUrl: 'widget3',
@@ -28,6 +31,7 @@ export default [
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra nisi non erat facilisis, sed commodo tellus posuere. Proin sollicitudin odio sit amet eleifend auctor. Donec nunc turpis, condimentum a ullamcorper ac, suscipit eu odio. Maecenas ut turpis maximus, condimentum dui in, ornare mi. Vestibulum non lacus blandit, scelerisque libero vitae, mollis dui. Proin sit amet tortor interdum, interdum neque nec, bibendum enim. Phasellus pulvinar tempor diam at rutrum. Suspendisse fermentum nulla sit amet velit viverra, non euismod dui hendrerit. Vivamus tristique eu arcu ut pharetra.'
   },
   {
+    id: 4,
     title: 'Widget 4',
     price: 900,
     imageUrl: 'widget4',

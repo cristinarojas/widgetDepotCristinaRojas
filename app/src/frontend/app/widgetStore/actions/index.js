@@ -1,28 +1,12 @@
-import Api from '../api';
-
+// Importing action const types
 import {
-  FETCH_WEATHER_REQUEST,
-  FETCH_WEATHER_RESPONSE
+  SHOW_WIDGET_DETAILS
 } from './actionTypes';
 
-// Weather Action Creators
-export const fetchWeatherRequest = () => dispatch => {
+// Widget Action Creators
+export const showWidgetDetails = payload => dispatch => {
   dispatch({
-    type: FETCH_WEATHER_REQUEST
-  });
-};
-
-export const fetchWeatherResponse = payload => dispatch => {
-  dispatch({
-    type: FETCH_WEATHER_RESPONSE,
+    type: SHOW_WIDGET_DETAILS,
     payload
   });
-};
-
-export const fetchWeather = city => dispatch => {
-
-  dispatch(fetchWeatherRequest());
-
-  Api.fetchWeather(city)
-    .then(response => dispatch(fetchWeatherResponse(response.data)));
-};
+}

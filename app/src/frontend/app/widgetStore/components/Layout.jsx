@@ -15,17 +15,27 @@ import Widget from './widget/Widget';
 import WidgetDetails from './widgetDetail/WidgetDetail';
 
 // Data widget details
-import widgetDetails from './shared/data/widgetData';
+import widgetData from './shared/data/widgetData';
 
-const Layout = () => {
+const Layout = (props) => {
+  // Getting the Redux action and state
+  const { showWidgetDetails, widget: selectedWidget  } = props;
+
   return (
     <main className={styles.mainContainer}>
       <Header />
       <Filter />
 
       <section className={styles.content}>
-        <Widget widgetDetails = {widgetDetails} />
-        <WidgetDetails />
+        <Widget
+          showWidgetDetails = {showWidgetDetails}
+          widgetData = {widgetData}
+        />
+
+        <WidgetDetails
+          selectedWidget = {selectedWidget}
+          widgetData = {widgetData}
+        />
       </section>
     </main>
   )

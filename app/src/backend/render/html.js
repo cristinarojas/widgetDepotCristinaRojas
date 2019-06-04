@@ -21,21 +21,6 @@ export default function html({ title }) {
 
       <body>
         <div id="root"></div>
-
-        <script>
-          // Detecting the user device
-          const isMobile = /iPhone|Android/i.test(navigator.userAgent);
-
-          // Creating our initialState
-          const initialState = {
-            device: {
-              isMobile
-            }
-          };
-
-          // Saving our initialState to the window object
-          window.initialState = initialState;
-        </script>
         <script src="${path}vendor.js"></script>
         <script src="${path}main.js"></script>
       </body>

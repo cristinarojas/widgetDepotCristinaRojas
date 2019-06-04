@@ -6,6 +6,16 @@ import styles from './WidgetDetail.scss';
 
 class WidgetDetail extends Component {
   render() {
+    // ES6 destructuring
+    // Getting the widgetData and selected widget that I pass from Layout
+    const { widgetData, selectedWidget } = this.props;
+
+    console.log('widgetData-->', widgetData, selectedWidget);
+    // Filter the widgetData with the selected widget
+    const singleWidget = widgetData.filter(w => w.id === Number(selectedWidget));
+
+    console.log('singleWidget-->', singleWidget)
+
     return (
       <>
         <section className={styles.detailContainer}>

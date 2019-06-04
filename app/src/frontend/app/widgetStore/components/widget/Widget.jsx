@@ -5,14 +5,25 @@ import React, { Component, Fragment } from 'react';
 import styles from './Widget.scss';
 
 class Widget extends Component {
+  // Method for show details
+  handleDetails = (id) => {
+    // Obtaining the action creator for use it
+    const { showWidgetDetails } = this.props;
+
+    // Sending the widget id to the action creator
+    showWidgetDetails(id);
+  }
+
   render() {
-    const { widgetDetails: widgetDetails } = this.props;
+    // ES6 destructuring
+    // Obtaining data
+    const { widgetData } = this.props;
 
     return (
       <>
         <section className={styles.widgets}>
           {
-            widgetDetails.map((widget, index) => (
+            widgetData.map((widget, index) => (
               <>
                 <section className={styles.widgetContainer} key={`${widget.title}-${index}`}>
                   <section>
@@ -27,7 +38,7 @@ class Widget extends Component {
                     </p>
                   </section>
 
-                  <i className={`fas fa-chevron-right`}></i>
+                  <i className={`fas fa-chevron-right`} onClick={() => this.handleDetails(widget.id)}></i>
                 </section>
               </>
             ))

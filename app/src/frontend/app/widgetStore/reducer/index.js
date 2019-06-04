@@ -1,20 +1,20 @@
 // Action Types
 import {
-  FETCH_WEATHER_RESPONSE
+  SHOW_WIDGET_DETAILS
 } from '../actions/actionTypes';
 
 const initialState = {
-  weather: []
+  widgetSelected: 1
 };
 
-export default function blogReducer(state = initialState, action) {
+export default function widgetReducer(state = initialState, action) {
   switch (action.type) {
 
-    case FETCH_WEATHER_RESPONSE: {
-      const { payload: weatherResult } = action;
+    case SHOW_WIDGET_DETAILS: {
+      const { payload: widgetSelected } = action;
 
       return Object.assign({}, state, {
-        weatherResult
+        widgetSelected
       });
     }
 

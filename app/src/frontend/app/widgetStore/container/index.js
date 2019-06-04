@@ -6,17 +6,17 @@ import { bindActionCreators } from 'redux';
 import Layout from '../components/Layout';
 
 // Importing Actions
-import { fetchWeather } from '../actions';
+import { showWidgetDetails } from '../actions';
 
 const mapStateToProps = (state) => {
   return {
-    //weather: state.weather.weatherResult
+    widget: state.widget.widgetSelected
   };
 };
 
 const mapDispatchToProps = (dispatch) => bindActionCreators(
   {
-    fetchWeather
+    showWidgetDetails
   },
   dispatch
 );
