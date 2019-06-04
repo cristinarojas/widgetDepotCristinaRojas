@@ -23,7 +23,7 @@ class Widget extends Component {
                       Price
                     </p>
                     <p className={styles.price}>
-                      {widget.price}
+                      {`$ ${widget.price}`}
                     </p>
                   </section>
 
