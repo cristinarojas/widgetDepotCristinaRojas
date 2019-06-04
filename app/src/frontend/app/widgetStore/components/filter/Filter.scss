@@ -1,0 +1,79 @@
+@import "../../../../sass/_dependencies.scss";
+
+.containerFilter {
+  width: 80%;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  input {
+    width: 98.5%;
+    height: 20px;
+    border-width: 0px;
+    border-bottom: 1px solid $veryLigthyGray;
+    padding: 10px;
+    font-size: 18px;
+    color: $strongGray;
+    font-weight: 200;
+    font-family: 'Quicksand', sans-serif;
+
+    &::placeholder {
+      font-style: italic;
+      color: $ligthyGray;
+      font-weight: 200;
+    }
+
+    &:focus {
+      outline: 0;
+    }
+
+    &:hover {
+      border-bottom: 1px solid $veryLightyBlue;
+    }
+
+    &:active {
+      border-bottom: 1px solid $veryLightyBlue;
+    }
+  }
+
+  i {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: $ligthyGray;
+  }
+
+  .results {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+
+    li {
+      display: block;
+      padding: 10px;
+      font-size: 18px;
+      color: $strongGray;
+      font-weight: 200;
+      font-family: 'Quicksand', sans-serif;
+
+      p {
+        font-weight: 600;
+
+        span {
+          font-style: italic;
+          font-weight: 400;
+        }
+      }
+
+      &:hover {
+        color: $veryLightyBlue;
+        cursor: pointer;
+      }
+    }
+  }
+}

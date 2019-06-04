@@ -1,0 +1,19 @@
+@import "../../../sass/_dependencies.scss";
+
+.mainContainer {
+  width: 100%;
+
+  .content {
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: grid;
+    grid-template-columns: 30% 80%;
+
+    // Mobile
+    @include mobile {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+  }
+}

@@ -1,9 +1,9 @@
-// Header component is a shared component because we can use this component in other section of the app.
+// Header component is a shared component because we can use this component in other section of the app
 
-// Dependencies.
+// Dependencies
 import React, { Fragment } from 'react';
 
-// Styles.
+// Styles
 import styles from './Header.scss';
 
 // Components
