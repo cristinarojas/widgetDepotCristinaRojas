@@ -20,6 +20,11 @@ npm install
 ```
 npm start
 ```
+4. Open this path in your browser
+
+```
+http://localhost:3000/widgetStore
+```
 
 ###### Requirements
 
