@@ -7,7 +7,7 @@ import styles from './Widget.scss';
 class Widget extends Component {
   // Using local state to control classes
   state = {
-    active: false
+    activeWidget: 0
   }
 
   // Method for show details
@@ -20,7 +20,7 @@ class Widget extends Component {
 
     // Updating local state
     this.setState({
-      active: true
+      activeWidget: Number(id)
     })
   }
 
@@ -34,25 +34,28 @@ class Widget extends Component {
         <section className={styles.widgets}>
           {
             widgetData.map((widget, index) => (
-              <>
-                <section
-                  className={`${styles.widgetContainer} ${this.state.active ? styles.active  : ''}`}
-                  key={`${widget.title}-${index}`}>
-                  <section>
-                    <h1 className={styles.title}>
-                      {widget.title}
-                    </h1>
-                    <p className={styles.text}>
-                      Price
-                    </p>
-                    <p className={styles.price}>
-                      {`$ ${widget.price}`}
-                    </p>
-                  </section>
-
-                  <i className={`fas fa-chevron-right`} onClick={() => this.handleDetails(widget.id, true)}></i>
+              <section
+                className={`
+                  ${styles.widgetContainer}
+                  ${this.state.activeWidget === widget.id ? styles.active  : ''}
+                `}
+                key={`${widget.title}-${index}`}
+                onClick={() => this.handleDetails(widget.id)}
+              >
+                <section>
+                  <h1 className={styles.title}>
+                    {widget.title}
+                  </h1>
+                  <p className={styles.text}>
+                    Price
+                  </p>
+                  <p className={styles.price}>
+                    {`$ ${widget.price}`}
+                  </p>
                 </section>
-              </>
+
+                <i className={`fas fa-chevron-right`}></i>
+              </section>
             ))
           }
         </section>

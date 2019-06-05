@@ -1,34 +1,50 @@
 // Dependencies
-import React, { Fragment } from 'react';
+import React, { Component } from 'react';
 
 // Styles
 import styles from './Filter.scss';
 
-const Filter = () => (
-  <>
-    <section className={styles.containerFilter}>
-      <input
-        type="text"
-        placeholder="Find the widget of your dreams"
-        autoFocus />
-        <i className={`fas fa-search`}></i>
+class Filter extends Component {
+  state = {
+    search: '',
+    filteredWidgets: []
+  }
 
-      <ul className={styles.results}>
-        <li>
-          <p>Widget 1 - <span>$750</span></p>
-        </li>
-        <li>
-          <p>Widget 2 - <span>$850</span></p>
-        </li>
-        <li>
-          <p>Widget 3 - <span>$950</span></p>
-        </li>
-        <li>
-          <p>Widget 4 - <span>$1000</span></p>
-        </li>
-      </ul>
-    </section>
-  </>
-)
+  // Method for filter widgets by title
+  handleChange = ({ target: { value } }) => {
+    const { widgetData } = this.props;
+
+    this.setState({
+      search: value,
+      filteredWidgets: value === '' ? [] : widgetData.filter(widget => widget.title.toLowerCase().includes(value.toLowerCase()))
+    });
+  }
+
+  render() {
+    const { filteredWidgets, search } = this.state;
+
+    return (
+      <section className={styles.containerFilter}>
+        <input
+          type="text"
+          placeholder="Find the widget of your dreams"
+          autoFocus
+          onChange={this.handleChange}
+          value={search}
+        />
+
+        <i className={`fas fa-search`} />
+
+        <ul className={styles.results}>
+          {filteredWidgets.map(widget => (
+            <li>
+              <p>{widget.title} - <span>${widget.price}</span></p>
+            </li>
+          ))}
+        </ul>
+      </section>
+    );
+  }
+}
 
 export default Filter;

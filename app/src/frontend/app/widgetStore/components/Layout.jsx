@@ -24,17 +24,17 @@ const Layout = (props) => {
   return (
     <main className={styles.mainContainer}>
       <Header />
-      <Filter />
+      <Filter widgetData={widgetData} />
 
       <section className={styles.content}>
         <Widget
-          showWidgetDetails = {showWidgetDetails}
-          widgetData = {widgetData}
+          showWidgetDetails={showWidgetDetails}
+          widgetData={widgetData}
         />
 
         <WidgetDetails
-          selectedWidget = {selectedWidget}
-          widgetData = {widgetData}
+          selectedWidget={selectedWidget}
+          widgetData={widgetData}
         />
       </section>
     </main>

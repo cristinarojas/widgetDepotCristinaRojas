@@ -10,9 +10,9 @@ class WidgetDetail extends Component {
   };
 
   handleAddWidget = () => {
-    this.setState({
-      counter: this.state.counter + 1
-    });
+    this.setState(prevState => ({
+      counter: prevState.counter + 1
+    }));
   }
 
   render() {
@@ -40,8 +40,8 @@ class WidgetDetail extends Component {
 
           <figure className={styles.widgetImg}>
             <img
-              src="https://j7ujdu94de-flywheel.netdna-ssl.com/wp-content/uploads/2016/05/5120x2880-dark-blue-solid-color-background-500x281.jpg"
-              alt="Widget 1"/>
+              src={`/images/${singleWidget.imageUrl}.jpg`}
+              alt={singleWidget.title}/>
           </figure>
 
           <span className={styles.line}></span>

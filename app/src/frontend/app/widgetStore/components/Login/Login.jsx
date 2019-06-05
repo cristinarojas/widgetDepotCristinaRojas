@@ -5,7 +5,7 @@ import React, { Fragment } from 'react';
 import styles from './Login.scss';
 
 const Login = () => {
-  const loginImg = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0mh6TKEaEeOn2DzS02gBuCzEFmbAt4WUuxB-eEpM9gTq5xgBo';
+  const loginImg = '/images/profile.jpeg';
   const loginAlt = 'Profile Login';
   return (
     <>
