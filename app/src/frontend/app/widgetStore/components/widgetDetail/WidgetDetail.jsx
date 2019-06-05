@@ -18,21 +18,17 @@ class WidgetDetail extends Component {
   render() {
     // ES6 destructuring
     // Getting the widgetData and selected widget that I pass from Layout
-    const { widgetData, selectedWidget, widgetFilter } = this.props;
+    const { widgetData, selectedWidget } = this.props;
 
-    console.log('widgetFilter-->', widgetFilter)
     // Filter the widgetData with the selected widget
-    const singleWidget = widgetData.filter(w => w.id === Number(selectedWidget))[0];
-    const filterWidget = widgetData.filter(w => w.id === Number(widgetFilter))[0];
-
-    console.log('filterWidget-->', filterWidget)
+    const widget = widgetData.filter(w => w.id === Number(selectedWidget))[0];
 
     return (
       <>
         <section className={styles.detailContainer}>
           <section className={styles.cartTitle}>
             <h1 className={styles.title}>
-              {singleWidget.title}
+              {widget.title}
             </h1>
             <span className={styles.counter}>
               {this.state.counter}
@@ -44,8 +40,8 @@ class WidgetDetail extends Component {
 
           <figure className={styles.widgetImg}>
             <img
-              src={`/images/${singleWidget.imageUrl}.jpg`}
-              alt={singleWidget.title}/>
+              src={`/images/${widget.imageUrl}.jpg`}
+              alt={widget.title}/>
           </figure>
 
           <span className={styles.line}></span>
@@ -53,9 +49,9 @@ class WidgetDetail extends Component {
           <h2>Specifications</h2>
           <section className={styles.specifications}>
             <section className={styles.info}>
-              <p>{singleWidget.dimensions}</p>
-              <p>{singleWidget.weight}</p>
-              <p>{singleWidget.capacity}</p>
+              <p>{widget.dimensions}</p>
+              <p>{widget.weight}</p>
+              <p>{widget.capacity}</p>
             </section>
 
             <section className={styles.title}>
@@ -70,7 +66,7 @@ class WidgetDetail extends Component {
           <h2>Description</h2>
 
           <article className={styles.description}>
-            <p>{singleWidget.description}</p>
+            <p>{widget.description}</p>
           </article>
         </section>
       </>

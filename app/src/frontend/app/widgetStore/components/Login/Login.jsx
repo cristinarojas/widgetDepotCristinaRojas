@@ -11,7 +11,9 @@ const Login = () => {
     <>
       <picture
         className={styles.login}>
-        <img src={loginImg} alt={loginAlt} />
+        <a href="https://github.com/cristinarojas" target="_blank">
+          <img src={loginImg} alt={loginAlt} />
+        </a>
       </picture>
     </>
   )

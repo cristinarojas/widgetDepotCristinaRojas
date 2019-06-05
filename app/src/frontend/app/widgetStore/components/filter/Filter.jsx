@@ -22,10 +22,16 @@ class Filter extends Component {
 
   // Method to show the selected widget on widgetDetail Component
   selectedWidget = (id) => {
-    const { filterWidgetDetails } = this.props;
+    const { showWidgetDetails } = this.props;
 
     // Sending the filter widget selected id to the action creator
-    filterWidgetDetails(id);
+    showWidgetDetails(id);
+
+    // Cleaning up filter results
+    this.setState({
+      search: '',
+      filteredWidgets: []
+    });
   }
 
   render() {

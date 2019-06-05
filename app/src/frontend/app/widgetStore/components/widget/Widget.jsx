@@ -27,7 +27,7 @@ class Widget extends Component {
   render() {
     // ES6 destructuring
     // Obtaining data
-    const { widgetData } = this.props;
+    const { widgetData, selectedWidget } = this.props;
 
     return (
       <>
@@ -37,7 +37,7 @@ class Widget extends Component {
               <section
                 className={`
                   ${styles.widgetContainer}
-                  ${this.state.activeWidget === widget.id ? styles.active  : ''}
+                  ${selectedWidget === widget.id ? styles.active  : ''}
                 `}
                 key={`${widget.title}-${index}`}
                 onClick={() => this.handleDetails(widget.id)}

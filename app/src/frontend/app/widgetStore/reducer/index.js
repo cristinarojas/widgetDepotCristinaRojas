@@ -6,8 +6,7 @@ import {
 
 // Initial state
 const initialState = {
-  widgetSelected: 1,
-  filterSelectedWidget: null
+  selectedWidget: 1
 };
 
 // Reducer
@@ -15,18 +14,10 @@ export default function widgetReducer(state = initialState, action) {
   switch (action.type) {
 
     case SHOW_WIDGET_DETAILS: {
-      const { payload: widgetSelected } = action;
+      const { payload } = action;
 
       return Object.assign({}, state, {
-        widgetSelected
-      });
-    }
-
-    case FILTER_SELECTED_WIDGET: {
-      const { payload: filterSelectedWidget } = action;
-
-      return Object.assign({}, state, {
-        filterSelectedWidget
+        selectedWidget: payload
       });
     }
 

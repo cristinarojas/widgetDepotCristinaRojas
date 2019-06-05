@@ -19,25 +19,25 @@ import widgetData from './shared/data/widgetData';
 
 const Layout = (props) => {
   // Getting the Redux action and state
-  const { showWidgetDetails, widget: selectedWidget, filterWidgetDetails, widgetFilter  } = props;
+  const { showWidgetDetails, selectedWidget } = props;
 
   return (
     <main className={styles.mainContainer}>
       <Header />
       <Filter
         widgetData={widgetData}
-        filterWidgetDetails={filterWidgetDetails}
+        showWidgetDetails={showWidgetDetails}
       />
 
       <section className={styles.content}>
         <Widget
           showWidgetDetails={showWidgetDetails}
+          selectedWidget={selectedWidget}
           widgetData={widgetData}
         />
 
         <WidgetDetails
           selectedWidget={selectedWidget}
-          widgetFilter={widgetFilter}
           widgetData={widgetData}
         />
       </section>

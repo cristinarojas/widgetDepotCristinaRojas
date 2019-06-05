@@ -6,19 +6,17 @@ import { bindActionCreators } from 'redux';
 import Layout from '../components/Layout';
 
 // Importing Actions
-import { showWidgetDetails, filterWidgetDetails } from '../actions';
+import { showWidgetDetails } from '../actions';
 
 const mapStateToProps = (state) => {
   return {
-    widget: state.widget.widgetSelected,
-    widgetFilter: state.widget.filterSelectedWidget,
+    selectedWidget: state.widget.selectedWidget
   };
 };
 
 const mapDispatchToProps = (dispatch) => bindActionCreators(
   {
-    showWidgetDetails,
-    filterWidgetDetails
+    showWidgetDetails
   },
   dispatch
 );
