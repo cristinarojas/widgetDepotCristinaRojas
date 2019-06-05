@@ -3,13 +3,13 @@
 ## How to run the project
 note: You need to have npm and nodejs installed.
 
-1. Clone the repo
+1. Clone the repo in your terminal
 
 ```
 git clone git@github.com:cristinarojas/widgetDepotCristinaRojas.git
 ```
 
-2. Open in your terminal widgetDepotCristinaRojas/app and run
+2. Go in your terminal to widgetDepotCristinaRojas/app and run
 
 ```
 npm install
