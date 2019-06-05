@@ -20,6 +20,14 @@ class Filter extends Component {
     });
   }
 
+  // Method to show the selected widget on widgetDetail Component
+  selectedWidget = (id) => {
+    const { filterWidgetDetails } = this.props;
+
+    // Sending the filter widget selected id to the action creator
+    filterWidgetDetails(id);
+  }
+
   render() {
     const { filteredWidgets, search } = this.state;
 
@@ -36,8 +44,8 @@ class Filter extends Component {
         <i className={`fas fa-search`} />
 
         <ul className={styles.results}>
-          {filteredWidgets.map(widget => (
-            <li>
+          {filteredWidgets.map((widget, index) => (
+            <li onClick={() => this.selectedWidget(widget.id)} key={index}>
               <p>{widget.title} - <span>${widget.price}</span></p>
             </li>
           ))}

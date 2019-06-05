@@ -1,4 +1,4 @@
-// The Layout component is the main component that holds all others components
+// The Layout component handle all others components & hold Redux actions and state
 
 // Dependencies
 import React from 'react';
@@ -19,12 +19,15 @@ import widgetData from './shared/data/widgetData';
 
 const Layout = (props) => {
   // Getting the Redux action and state
-  const { showWidgetDetails, widget: selectedWidget  } = props;
+  const { showWidgetDetails, widget: selectedWidget, filterWidgetDetails, widgetFilter  } = props;
 
   return (
     <main className={styles.mainContainer}>
       <Header />
-      <Filter widgetData={widgetData} />
+      <Filter
+        widgetData={widgetData}
+        filterWidgetDetails={filterWidgetDetails}
+      />
 
       <section className={styles.content}>
         <Widget
@@ -34,6 +37,7 @@ const Layout = (props) => {
 
         <WidgetDetails
           selectedWidget={selectedWidget}
+          widgetFilter={widgetFilter}
           widgetData={widgetData}
         />
       </section>

@@ -6,6 +6,7 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 // Root Reducer
 import rootReducer from './reducers';
 
+// Configuring & creating the store
 export default function configureStore(initialState) {
   const middleware = [
     thunk

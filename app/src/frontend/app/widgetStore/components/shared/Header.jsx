@@ -1,5 +1,3 @@
-// Header component is a shared component because we can use this component in other section of the app
-
 // Dependencies
 import React, { Fragment } from 'react';
 

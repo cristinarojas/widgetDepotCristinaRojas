@@ -5,7 +5,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 // Importing container that have the widgetStore app
 import WidgetStore from './app/widgetStore/container';
 
-// Router 
+// Router of the app
 const App = () => (
   <BrowserRouter>
     <Switch>

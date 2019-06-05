@@ -18,10 +18,14 @@ class WidgetDetail extends Component {
   render() {
     // ES6 destructuring
     // Getting the widgetData and selected widget that I pass from Layout
-    const { widgetData, selectedWidget } = this.props;
+    const { widgetData, selectedWidget, widgetFilter } = this.props;
 
+    console.log('widgetFilter-->', widgetFilter)
     // Filter the widgetData with the selected widget
     const singleWidget = widgetData.filter(w => w.id === Number(selectedWidget))[0];
+    const filterWidget = widgetData.filter(w => w.id === Number(widgetFilter))[0];
+
+    console.log('filterWidget-->', filterWidget)
 
     return (
       <>
