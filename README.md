@@ -1,7 +1,7 @@
 # widgetDepotCristinaRojas
 
 ## How to run the project
-note: You need to have npm and nodejs installed.
+note: You need to have nodejs installed.
 
 1. Clone the repo in your terminal
 
