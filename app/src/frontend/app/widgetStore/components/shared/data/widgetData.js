@@ -8,7 +8,7 @@ export default [
     dimensions: '14" x 20" x 5"',
     weight: '4lbs',
     capacity: '10L',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra nisi non erat facilisis, sed commodo tellus posuere. Proin sollicitudin odio sit amet eleifend auctor. Donec nunc turpis, condimentum a ullamcorper ac, suscipit eu odio. Maecenas ut turpis maximus, condimentum dui in, ornare mi. Vestibulum non lacus blandit, scelerisque libero vitae, mollis dui. Proin sit amet tortor interdum, interdum neque nec, bibendum enim. Phasellus pulvinar tempor diam at rutrum. Suspendisse fermentum nulla sit amet velit viverra, non euismod dui hendrerit. Vivamus tristique eu arcu ut pharetra.'
+    description: 'Widget 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra nisi non erat facilisis, sed commodo tellus posuere. Proin sollicitudin odio sit amet eleifend auctor. Donec nunc turpis, condimentum a ullamcorper ac, suscipit eu odio. Maecenas ut turpis maximus, condimentum dui in, ornare mi. Vestibulum non lacus blandit, scelerisque libero vitae, mollis dui. Proin sit amet tortor interdum, interdum neque nec, bibendum enim. Phasellus pulvinar tempor diam at rutrum. Suspendisse fermentum nulla sit amet velit viverra, non euismod dui hendrerit. Vivamus tristique eu arcu ut pharetra.'
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ export default [
     dimensions: '15" x 21" x 6"',
     weight: '5lbs',
     capacity: '11L',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra nisi non erat facilisis, sed commodo tellus posuere. Proin sollicitudin odio sit amet eleifend auctor. Donec nunc turpis, condimentum a ullamcorper ac, suscipit eu odio. Maecenas ut turpis maximus, condimentum dui in, ornare mi. Vestibulum non lacus blandit, scelerisque libero vitae, mollis dui. Proin sit amet tortor interdum, interdum neque nec, bibendum enim. Phasellus pulvinar tempor diam at rutrum. Suspendisse fermentum nulla sit amet velit viverra, non euismod dui hendrerit. Vivamus tristique eu arcu ut pharetra.'
+    description: 'Widget 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra nisi non erat facilisis, sed commodo tellus posuere. Proin sollicitudin odio sit amet eleifend auctor. Donec nunc turpis, condimentum a ullamcorper ac, suscipit eu odio. Maecenas ut turpis maximus, condimentum dui in, ornare mi. Vestibulum non lacus blandit, scelerisque libero vitae, mollis dui. Proin sit amet tortor interdum, interdum neque nec, bibendum enim. Phasellus pulvinar tempor diam at rutrum. Suspendisse fermentum nulla sit amet velit viverra, non euismod dui hendrerit. Vivamus tristique eu arcu ut pharetra.'
   },
   {
     id: 3,
@@ -27,8 +27,8 @@ export default [
     imageUrl: 'widget3',
     dimensions: '16" x 22" x 7"',
     weight: '6lbs',
-    capacity: '11L',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra nisi non erat facilisis, sed commodo tellus posuere. Proin sollicitudin odio sit amet eleifend auctor. Donec nunc turpis, condimentum a ullamcorper ac, suscipit eu odio. Maecenas ut turpis maximus, condimentum dui in, ornare mi. Vestibulum non lacus blandit, scelerisque libero vitae, mollis dui. Proin sit amet tortor interdum, interdum neque nec, bibendum enim. Phasellus pulvinar tempor diam at rutrum. Suspendisse fermentum nulla sit amet velit viverra, non euismod dui hendrerit. Vivamus tristique eu arcu ut pharetra.'
+    capacity: '12L',
+    description: 'Widget 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra nisi non erat facilisis, sed commodo tellus posuere. Proin sollicitudin odio sit amet eleifend auctor. Donec nunc turpis, condimentum a ullamcorper ac, suscipit eu odio. Maecenas ut turpis maximus, condimentum dui in, ornare mi. Vestibulum non lacus blandit, scelerisque libero vitae, mollis dui. Proin sit amet tortor interdum, interdum neque nec, bibendum enim. Phasellus pulvinar tempor diam at rutrum. Suspendisse fermentum nulla sit amet velit viverra, non euismod dui hendrerit. Vivamus tristique eu arcu ut pharetra.'
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ export default [
     imageUrl: 'widget4',
     dimensions: '17" x 23" x 8"',
     weight: '7lbs',
-    capacity: '12L',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra nisi non erat facilisis, sed commodo tellus posuere. Proin sollicitudin odio sit amet eleifend auctor. Donec nunc turpis, condimentum a ullamcorper ac, suscipit eu odio. Maecenas ut turpis maximus, condimentum dui in, ornare mi. Vestibulum non lacus blandit, scelerisque libero vitae, mollis dui. Proin sit amet tortor interdum, interdum neque nec, bibendum enim. Phasellus pulvinar tempor diam at rutrum. Suspendisse fermentum nulla sit amet velit viverra, non euismod dui hendrerit. Vivamus tristique eu arcu ut pharetra.'
+    capacity: '13L',
+    description: 'Widget 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra nisi non erat facilisis, sed commodo tellus posuere. Proin sollicitudin odio sit amet eleifend auctor. Donec nunc turpis, condimentum a ullamcorper ac, suscipit eu odio. Maecenas ut turpis maximus, condimentum dui in, ornare mi. Vestibulum non lacus blandit, scelerisque libero vitae, mollis dui. Proin sit amet tortor interdum, interdum neque nec, bibendum enim. Phasellus pulvinar tempor diam at rutrum. Suspendisse fermentum nulla sit amet velit viverra, non euismod dui hendrerit. Vivamus tristique eu arcu ut pharetra.'
   }
 ];
